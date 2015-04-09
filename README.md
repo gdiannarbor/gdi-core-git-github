@@ -3,6 +3,9 @@ This is the official Girl Develop It Core Intro to Git and Github course. Materi
 
 The course is meant to be taught in a two-hour workshop. Each of the slides and practice files are customizable according to the needs of a given class or audience.
 
+## Updated Content
+The core Intro to Git and GitHub has been updated by Chris DeMars, instructor for Girl Develop It Ann Arbor.
+
 
 ## Theme customization
 
