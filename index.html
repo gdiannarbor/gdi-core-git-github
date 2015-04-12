@@ -1,74 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
 
-	<head>
-		<meta charset="utf-8">
+  <title>Introduction to Git and Github | Girl Develop It Ann Arbor</title>
 
-		<title>Intro to Git and Github ~ Girl Develop It</title>
-
-		<meta name="description" content="This is the official Girl Develop It Core Intro to Git and GitHub course. Material based on original material by Kim Moir, Daniel Fischer, Aurelia Moser, Carina C. Zona and Izzy Johnston. 
+    <meta name="description" content="This is the official Girl Develop It Core Intro to Git and GitHub course. Material based on original material by Kim Moir, Daniel Fischer, Aurelia Moser, Carina C. Zona and Izzy Johnston.
 
     The course is meant to be taught in a two-hour workshop. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
-		<meta name="author" content="Girl Develop It">
+    <meta name="author" content="Girl Develop It">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdicool.css" id="theme">
+  <link rel="shortcut icon" href="favicon.ico">
 
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/gdiaa.css" id="theme">
+  <link rel="stylesheet" href="lib/css/rainbow.css">
+  <link rel="stylesheet" href="css/print/pdf.css" media="print">
 
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+  <script src="lib/js/head.min.js"></script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
 
-	<body>
+<body>
+  <div class="reveal">
+    <div class="slides">
 
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-			  <!-- Opening slide -->
+      <!-- EVENT INTRO -->
+      <section>
+        <!-- Event Intro -->
         <section>
-          <img src = "images/gdi_logo_badge.png">
-          <h3>Intro to Git and Github</h3>
-        </section>
-        
-        <!-- Welcome-->
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
+          <img src="images/gdi_logo_badge.png" class="img--bare" height="450px" />
+          <div class="box--small">
+            <h3 class="event__title"><span class="green"><small><span class="blue">Intro to</span></small><br/>Git &amp; Github</h3>
+            <p><small>Chris DeMars &nbsp; | &nbsp; @saltnburnem &nbsp; | &nbsp; @gdiannarbor  &nbsp; | &nbsp; #GDIA2 &nbsp; | &nbsp; #IntroToGit</small></p>
+            <aside class="notes">
+            </aside>
           </div>
         </section>
-        
+
+        <!-- ABOUT YOU -->
         <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p class = "blue">Tell us about yourself.</p>
-          <ul>
-            <li>Who are you?</li>
-            <li>What do you hope to get out of the class?</li>
-            <li>Who is your favorite horror movie character?</li>
-          </ul>
-          </div>
+          <h3>About Me</h3>
+          <!-- TODO: Chris fill this in! -->
         </section>
-        
+
+        <section>
+          <h3>About the Team!</h3>
+          <ul class="list--tall box--small copy--small">
+            <li>What's your <span class="green">name</span>?</li>
+            <li>What do you <span class="blue">hope to get</span> out of the class?</li>
+            <li>Who is your <span class="red">favorite horror movie character</span>?</li>
+          </ul>
+        </section>
+
         <section>
           <h3>What we will cover today</h3>
           <ul>
@@ -77,7 +67,8 @@
             <li class ="fragment">"Gitting" social with GitHub</li>
           </ul>
         </section>
-        
+        </section>
+
         <!-- Version control-->
         <section>
           <section>
@@ -225,7 +216,7 @@ $ git config --list
             <h3>Add files</h3>
             <p>Create a new hello_world.txt file in your new folder</p>
                         <pre><code contenteditable class ="command-line">
-  touch hello_world.txt 
+  touch hello_world.txt
             </code></pre>
             <p>Check repo status</p>
             <pre><code contenteditable class ="command-line">
@@ -264,7 +255,7 @@ $ git config --list
               <li class="fragment">When we <span class ="green">add</span> a new file, we tell Git to add the file to the repository to be tracked</li>
               <li class="fragment">When we <span class ="green">stage</span> an existing file (also with the keyword 'add'), we are telling Git to track the current state of our file</li>
               <li class="fragment">A <span class ="green">commit</span> saves changes made to a file, not the file as a whole. The commit will have a 'hash' so we can track which changes were committed when and by whom.</li>
-            
+
             </ul>
           </section>
           <section>
@@ -292,7 +283,7 @@ $ git config --list
         <section>
           <section>
             <h3>Nobody's Perfect</h3>
-            <h4>Undoing local changes</h4> 
+            <h4>Undoing local changes</h4>
             <p>If you haven't committed yet</p>
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
@@ -305,7 +296,7 @@ $ git config --list
           </section>
           <section>
             <h3>Nobody's Perfect</h3>
-            <h4>Undoing staged changes</h4> 
+            <h4>Undoing staged changes</h4>
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
               <pre><code contenteditable class ="command-line">
@@ -318,7 +309,7 @@ git checkout hello_world.txt
           </section>
           <section>
             <h3>Nobody's Perfect</h3>
-            <h4>Undoing staged changes</h4> 
+            <h4>Undoing staged changes</h4>
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
               <pre><code contenteditable class ="command-line">
@@ -384,7 +375,7 @@ git branch
             <p>Switch to master and look at hello_world.txt</p>
             <pre><code contenteditable class ="command-line">
 git checkout master
-            </code></pre>            
+            </code></pre>
             <p>Switch to version2 and look at hello_world.txt</p>
             <pre><code contenteditable class ="command-line">
 git checkout version2
@@ -427,7 +418,7 @@ git commit -m "Changing first line in version2"
 git merge master
             </code></pre>
             <p class ="fragment">You will be notified of a conflict. Go to the file and fix the problem. Then commit your edits.</p>
-                       
+
           </section>
         </section>
         <!-- GitHub-->
@@ -557,49 +548,59 @@ git fetch upstream
              <p>How to manage pull requests is out of the scope of this short workshop, but you can learn more from the <a href = "https://help.github.com/categories/63/articles" target ="_blank" alt = "Links to tutorials on pull requests and collaboration">Github Collaborating Tutorials</a>
           </section>
         </section>
-        <!-- -->
+
+      <section>
         <section>
           <h2>Questions?</h2>
           <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
             <div class ="clear"></div></div>
         </section>
-			</div>
-  		<footer>
-        <div class="copyright">
-          Intro to Git and Github ~ Girl Develop It ~
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-        </div>
-      </footer>
-		</div>
+        <!-- Event Outro -->
+        <section>
+          <img src="images/gdi_logo_badge.png" class="img--bare" height="450px" />
+          <div class="box--small">
+            <h3 class="event__title"><span class="green"><small><span class="blue">Intro to</span></small><br/>Git &amp; Github</h3>
+            <p><small>Chris DeMars &nbsp; | &nbsp; @saltnburnem &nbsp; | &nbsp; @gdiannarbor  &nbsp; | &nbsp; #GDIA2 &nbsp; | &nbsp; #IntroToGit</small></p>
+            <aside class="notes">
+            </aside>
+          </div>
+        </section>
+      </section>
+    </div>
 
+    <footer>
+      <div class="copyright">
+        @gdiannarbor  &nbsp; | &nbsp; #GDIA2 &nbsp; | &nbsp; #IntroToGit &nbsp;
+        <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
+          <img alt="Creative Commons License" class="img--bare" src="images/cc.png" />
+        </a>
+      </div>
+    </footer>
+  </div>
 
-		<script src="reveal/lib/js/head.min.js"></script>
-		<script src="reveal/js/reveal.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+  <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      rollingLinks: true,
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
-
-	</body>
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+    });
+  </script>
+</body>
 </html>
