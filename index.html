@@ -7,7 +7,9 @@
 
     <meta name="description" content="This is the official Girl Develop It Core Intro to Git and GitHub course. Material based on original material by Kim Moir, Daniel Fischer, Aurelia Moser, Carina C. Zona and Izzy Johnston.
 
-    The course is meant to be taught in a two-hour workshop. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+    The course is meant to be taught in a two-hour workshop. Each of the slides and practice files are customizable according to the needs of a given class or audience.
+
+    This deck of slides has been modified by Julie Cameron and Chris DeMars.">
     <meta name="author" content="Girl Develop It">
 
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -47,7 +49,12 @@
         <!-- ABOUT YOU -->
         <section>
           <h3>About Me</h3>
-          <!-- TODO: Chris fill this in! -->
+          <img src="images/HeadShotv2Small.jpg"  class="left img--bare" width="200" height="auto" alt="Chris DeMars" title="Chris DeMars">
+          <img src="images/dte-logo.png"  class="left img--bare" alt="DTE Energy" title="DTE Energy">
+          <img src="images/bg-logo.png" class="right img--bare" width="200" height="auto" alt="Baker College" title="Baker College">
+          <a href="http://thischriscreative.com">http://thischriscreative.com</a>
+          <a href="htto://github.com/chrisdemars">http://github.com/chrisdemars</a>
+          <p>cdemars86@gmail.com</p>
         </section>
 
         <section>
@@ -63,8 +70,8 @@
           <h3>What We'll Cover Today</h3>
           <ul class="list--xtall box--small copy--small">
             <li class ="fragment">What is version control and why should we care?</li>
-            <li class ="fragment">Basics of git -- the essential commands</li>
-            <li class ="fragment">"Gitting" social with GitHub</li>
+            <li class ="fragment">Basics of git -- the essential commands.</li>
+            <li class ="fragment">"Gitting" social with GitHub.</li>
           </ul>
         </section>
       </section>
@@ -73,7 +80,7 @@
       <section>
         <section>
           <h3>What is version control?</h3>
-          <p class="box--small copy--small">Version control allows you (and your team) to do two powerful things</p>
+          <p class="box--small copy--small">Version control allows you (and your team) to do two powerful things.</p>
           <div class="box fragment">
             <h4>Collaborate</h4>
             <p class="box--small copy--xsmall">Create anything with other people, from academic papers to entire websites and applications.</p>
@@ -128,10 +135,10 @@
         <h3>Intro to Git</h3>
         <p class="box copy--small">The Goals of Git Design include:</p>
         <ul class="list--tall copy--xsmall">
-          <li class="fragment">Fast -- add to your team and code base quickly</li>
-          <li class="fragment">Distributed (see slide above) </li>
-          <li class="fragment">Each commit has a corresponding hash (track changes from everyone)</li>
-          <li class="fragment">Everyone has a local copy of the history</li>
+          <li class="fragment">Fast -- add to your team and code base quickly.</li>
+          <li class="fragment">Distributed (see slide above).</li>
+          <li class="fragment">Each commit has a corresponding hash (track changes from everyone).</li>
+          <li class="fragment">Everyone has a local copy of the history.</li>
         </ul>
       </section>
 
@@ -233,11 +240,11 @@ git status
         </section>
         <section>
           <h3>Changes and commits</h3>
-          <p class="copy--small box--small">Open hello_world.txt and add some more text</p>
+          <p class="copy--small box--small">Open hello_world.txt and add some more text.</p>
           <pre style="height: 80px; overflow: hidden;"><code contenteditable class ="command-line">
 git status
           </code></pre>
-          <p class="copy--small box--small">Stage and commit the change</p>
+          <p class="copy--small box--small">Stage and commit the change.</p>
           <pre style="height: 100px; overflow: hidden;"><code contenteditable class ="command-line">
 git add hello_world.txt
 git commit -m "First commit. Added hello world to repository."
@@ -255,8 +262,8 @@ git commit -m "First commit. Added hello world to repository."
           <h3>What did we just do??</h3>
           <p class="copy--small box--small">How is this all different than just saving a file?</p>
           <ul class="list--tall copy--xsmall box--small">
-            <li class="fragment">When we <span class ="green">add</span> a new file, we tell Git to add the file to the repository to be tracked</li>
-            <li class="fragment">When we <span class ="green">stage</span> an existing file (also with the keyword <code>add</code>), we are telling Git to track the current state of our file</li>
+            <li class="fragment">When we <span class ="green">add</span> a new file, we tell Git to add the file to the repository to be tracked.</li>
+            <li class="fragment">When we <span class ="green">stage</span> an existing file (also with the keyword <code>add</code>), we are telling Git to track the current state of our file.</li>
             <li class="fragment">A <span class ="green">commit</span> saves changes made to a file, not the file as a whole. The commit will have a 'hash' so we can track which changes were committed when and by whom.</li>
 
           </ul>
@@ -354,9 +361,9 @@ git rm my_other_file.txt
         <section>
           <h3>Branching</h3>
           <ul class="list--xtall copy--small box--small">
-            <li class="fragment">Allows you to develop different code on the same base</li>
-            <li class="fragment">Conduct exploratory work without affecting work on the master branch</li>
-            <li class="fragment">Incorporate changes to your master branch only when you are ready</li>
+            <li class="fragment">Allows you to develop different code on the same base.</li>
+            <li class="fragment">Conduct exploratory work without affecting work on the master branch.</li>
+            <li class="fragment">Incorporate changes to your master branch only when you are ready.</li>
           </ul>
         </section>
         <section>
@@ -399,7 +406,7 @@ git branch
 git checkout master
 git merge version2
           </code></pre>
-          <p class="box--small copy--xsmall">* Rebasing is another option, but will not be covered in this workshop</p>
+          <p class="box--small copy--xsmall">* Rebasing is another option, but will not be covered in this workshop.</p>
         </section>
         <section>
           <h3>Merging</h3>
@@ -434,10 +441,10 @@ git commit -m "Changing first line in master"
         <ul class="list--xtall copy--small box--small">
           <li class ="fragment">Launched in <span class ="green">2008</span></li>
           <li class = "fragment">Leader in <span class ="green">Social Coding</span></li>
-          <li class = "fragment">GitHub is a commercial site that allows users to <span class = "green">host Git repositories</span> publicly and privately</li>
-          <li class ="fragment"><span class ="green">Open source projects</span> host or mirror their repositories on GitHub</li>
-          <li class ="fragment"><span class ="green">Post your own code</span> for others to use or contribute to</li>
-          <li class ="fragment">Use and <span class ="green">learn</span> from the code in other people's repositories</li>
+          <li class = "fragment">GitHub is a commercial site that allows users to <span class = "green">host Git repositories</span> publicly and privately.</li>
+          <li class ="fragment"><span class ="green">Open source projects</span> host or mirror their repositories on GitHub.</li>
+          <li class ="fragment"><span class ="green">Post your own code</span> for others to use or contribute to.</li>
+          <li class ="fragment">Use and <span class ="green">learn</span> from the code in other people's repositories.</li>
         </ul>
       </section>
 
@@ -486,7 +493,7 @@ git pull origin master
         <section>
           <h3>GitHub</h3>
           <div class="box"><h4>Pulling from remote repository</h4>
-                    <p class="copy--small box--small">If you are working with a team, you want to make sure that you have everyone's changes before pushing your changes to the GitHub repo</p></div>
+                    <p class="copy--small box--small">If you are working with a team, you want to make sure that you have everyone's changes before pushing your changes to the GitHub repo.</p></div>
           <pre><code contenteditable class ="command-line">
 # Commit local changes
 git commit -m "My latest commit"
@@ -507,7 +514,7 @@ git push origin master
         <section>
           <h3>Forking</h3>
           <ul class="list--xtall copy--small box">
-            <li>There are <span class = "green">MILLIONS</span> of public repositories on GitHub</li>
+            <li>There are <span class = "green">MILLIONS</span> of public repositories on GitHub.</li>
             <li>If you want to <span class = "green">use</span> or <span class = "green">contribute</span> to a repository, you can "fork" it.</li>
           </ul>
         </section>
@@ -542,7 +549,7 @@ git fetch upstream
           <ul class="list--xtall box copy--small">
             <li class = "fragment">After you fork and clone a repository all pushed changes will go to <strong>your fork</strong></li>
             <li class = "fragment">These <strong>changes will not affect the original repository</strong></li>
-            <li class = "fragment">If you would like to get your changes to be incorporated into the original repo, you can <span class="green">submit a pull request</span></li>
+            <li class = "fragment">If you would like to get your changes to be incorporated into the original repo, you can <span class="green">submit a pull request.</span></li>
           </ul>
         </section>
         <section>
@@ -555,7 +562,15 @@ git fetch upstream
         </section>
         <section>
           <h3>Managing pull requests</h3>
-           <p class="copy--small box">How to manage pull requests is out of the scope of this short workshop, but you can learn more from the <a href = "https://help.github.com/categories/63/articles" target ="_blank" alt = "Links to tutorials on pull requests and collaboration">Github Collaborating Tutorials</a>
+           <p class="copy--small box">How to manage pull requests is out of the scope of this short workshop, but you can learn more from the <a href = "https://help.github.com/categories/63/articles" target ="_blank" alt = "Links to tutorials on pull requests and collaboration">Github Collaborating Tutorials</a>.</p>
+        </section>
+          <section>
+          <h3>Git Ignore File</h3>
+           <p class="copy--small box">Gitignore is a file created to ignore files you don't want to push remotely.</p>
+          <ul class="list--xtall copy--small box--small">
+            <li><a href="http://gitignore.io/" target="_blank">gitignore.io</a></li>
+            <li><a href="http://commongitignore.thischriscreative.com/" target="_blank">Common .gitignore</a></li>
+          </ul>
         </section>
       </section>
 
@@ -572,6 +587,9 @@ git fetch upstream
             <li><a href="http://gitimmersion.com/" target="_blank">Git Immersion</a></li>
             <li><a href="https://www.atlassian.com/git/tutorials/" target="_blank">Atlassian Git Tutorials</a></li>
             <li><a href="https://help.github.com/articles/good-resources-for-learning-git-and-github/" target="_blank">Github Git Resources</a></li>
+            <li><a href="http://rogerdudler.github.io/git-guide/" target="_blank">git - the simple guide</a></li>
+            <li><a href="https://progit.org/" target="_blank">Pro Git</a></li>
+            <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
           </ul>
         </section>
 
